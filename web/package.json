@@ -1,0 +1,21 @@
+{
+  "name": "lila-player-journey-visualizer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Player Journey Visualization Tool for LILA BLACK telemetry",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test src/lib/*.test.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "vite": "^8.1.0"
+  }
+}

@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+web/node_modules/
+
+# build output
+web/dist/
+
+# python
+__pycache__/
+*.pyc
+tools/__pycache__/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,12 @@
+{
+  "name": "lila-player-journey-visualizer-repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Repository-level commands for the LILA BLACK Player Journey Visualizer",
+  "scripts": {
+    "setup": "npm --prefix web install",
+    "test": "python3 tools/verify_project.py && npm --prefix web test",
+    "build": "npm --prefix web run build",
+    "verify": "npm test && npm run build"
+  }
+}
