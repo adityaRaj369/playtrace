@@ -51,7 +51,13 @@ def verify_docs(v):
     architecture = read_text(ROOT / "ARCHITECTURE.md")
     insights = read_text(ROOT / "INSIGHTS.md")
 
-    for phrase in ["Tech Stack", "Setup", "Test and Build", "Deployment", "Regenerate Data"]:
+    for phrase in [
+        "Tech Stack",
+        "Local Setup",
+        "Verify Everything",
+        "Vercel Deployment",
+        "Regenerate The Static Dataset",
+    ]:
         v.check(phrase in readme, f"README documents {phrase}")
 
     for phrase in ["Data Flow", "Coordinate Mapping", "Assumptions", "Tradeoffs"]:
@@ -137,7 +143,8 @@ def verify_source(v):
         "web/src/lib/playback.js",
         "web/src/lib/audience.js",
         "web/src/lib/matches.js",
-        ".github/workflows/deploy.yml",
+        "docs/screenshots/match-view.png",
+        "docs/screenshots/heatmap-view.png",
     ]
     for relative_path in required_files:
         v.check((ROOT / relative_path).is_file(), f"{relative_path} exists")

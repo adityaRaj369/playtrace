@@ -1,5 +1,5 @@
 // Data fetching. All paths are relative to import.meta.env.BASE_URL so the
-// app works under any deploy prefix (GitHub Pages /<repo>/, Vercel root, etc).
+// app works from the Vercel deployment and local preview without hardcoded URLs.
 
 const BASE = import.meta.env.BASE_URL || "/";
 

@@ -12,7 +12,7 @@ A static React + Vite web app that visualizes LILA BLACK player journeys on the 
 | Rendering | Canvas 2D | Handles paths, markers, and heatmaps efficiently without thousands of DOM nodes. |
 | Data pipeline | Python | Best fit for parsing and reshaping telemetry. |
 | Parquet reader | Custom stdlib reader | Keeps regeneration dependency-free; no `pyarrow` or backend required. |
-| Hosting | Static site | The tool can run on GitHub Pages, Vercel, or Netlify with no server. |
+| Hosting | Vercel static site | No backend cost or runtime server; Vercel directly serves the Vite build output. |
 
 ## Data Flow
 
@@ -67,4 +67,4 @@ The `1 - v` flip is required because image coordinates start at the top-left. Th
 | Precompute JSON instead of reading Parquet in-browser | Simpler deployment and faster UI, but data must be regenerated after raw data changes. |
 | Canvas instead of SVG | Faster rendering for dense paths/heatmaps, but marker hover interactions are harder. |
 | Custom Parquet reader | More code to own, but the repo works without Python package installs. |
-| Static hosting | No backend cost or ops, but no live querying beyond generated views. |
+| Static Vercel hosting | No backend cost or ops, but no live querying beyond generated views. |
