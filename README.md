@@ -4,7 +4,7 @@ Browser-based visualization tool for LILA BLACK gameplay telemetry. It lets a le
 
 ## Live Demo
 
-Current status: not deployed yet. After publishing, replace this line with the GitHub Pages, Vercel, or Netlify URL.
+Live app: https://playtrace-gules.vercel.app/
 
 The app is fully static after build. It does not need a backend server in production.
 
